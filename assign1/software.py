@@ -94,9 +94,6 @@ class MainWindow(QWidget):
         if len(self.game.children) <= 0:
             self.winner_is()
             return
-        print('-------------') 
-        for elm in self.game.children:
-            print('heu : ',elm.heu)
         self.game = self.game.children[0]
         self.set_label_text(self.game.string)
         self.set_label_score(self.game.score)
@@ -106,9 +103,6 @@ class MainWindow(QWidget):
         if len(self.game.children) <= 0:
             self.winner_is()
             return
-        print('-------------') 
-        for elm in self.game.children:
-            print('heu : ',elm.heu)
         self.game = self.game.children[1]  
         self.set_label_text(self.game.string)
         self.set_label_score(self.game.score)
@@ -118,9 +112,6 @@ class MainWindow(QWidget):
         if len(self.game.children) <= 0:
             self.winner_is()
             return
-        print('-------------') 
-        for elm in self.game.children:
-            print('heu : ',elm.heu)
         self.game = self.game.children[2]  
         self.set_label_text(self.game.string)
         self.set_label_score(self.game.score)
@@ -130,9 +121,6 @@ class MainWindow(QWidget):
         if len(self.game.children) <= 0:
             self.winner_is()
             return
-        print('-------------') 
-        for elm in self.game.children:
-            print('heu : ',elm.heu)
         self.game = self.game.children[3]
         self.set_label_text(self.game.string)
         self.set_label_score(self.game.score)
@@ -142,9 +130,6 @@ class MainWindow(QWidget):
         if len(self.game.children) <= 0:
             self.winner_is()
             return
-        print('-------------') 
-        for elm in self.game.children:
-            print('heu : ',elm.heu)
         best = 2
         for i in range(len(self.game.children)):
             if self.game.children[i].heu < self.game.children[best].heu:

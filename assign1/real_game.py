@@ -5,7 +5,7 @@ def get_left(s,m):
     if m:
         _sum = (a + b)%10
         return (get_res(_sum), str(_sum) + s[2::])
-    _sub = (a - b%10 
+    _sub = (a - b)%10 
     if _sub < 0:
         _sub = _sub*(-1)
     return (get_res(_sub), str(_sub) + s[2::])
